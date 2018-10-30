@@ -27,7 +27,7 @@ void loop() {
     Serial.println("\nPlace a formatted Mifare Classic NFC tag on the reader.");
     if (nfc.tagPresent()) {
         NdefMessage message = NdefMessage();
-        message.addUriRecord("http://ididitadam.com");
+        message.addUriRecord("https://hypnotic-purpose.glitch.me/9JWUhz2MDqlkmrtJzTTacw");
 
         bool success = nfc.write(message);
         if (success) {
